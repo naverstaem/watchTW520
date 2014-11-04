@@ -1,21 +1,21 @@
 
-
-.navbar-header
+.navbar
+  margin-bottom: 12px
 
 .navbar-brand
-  display: none
+  text-transform: uppercase
+  color: #ffffff !important
 .navbar-default
   border: none
   background: none
-  padding: 10px 0 0
+  padding: 12px 0 0
   text-align: center
 
   .icon-bar
     background-color: #fff !important
-  .navbar-collapse
-    padding: 0
+
   .navbar-nav
-    margin-top: 15px
+    margin-top: 5px
 
     li
       a
@@ -34,7 +34,7 @@
       //    color: #ffffff !important
 
   .navbar-right
-    margin-top: 15px
+    margin-top: 5px
     .right-nomenclature
       font-family: 'robotomedium_italic'
       color: #d0d5e6
@@ -42,7 +42,7 @@
       text-transform: uppercase
       display: inline-block
       position: relative
-      top: -5px
+      top: -4px
       margin-right: 20px
     .right-b
       display: inline-block
@@ -78,6 +78,216 @@
 
 header
   background: #242733
+  .container
+    max-width: 990px
+
+.top-b
+  background: url(../img/header_bg.jpg) center center no-repeat
+  +background-size(cover)
+  padding: 45px 0 70px 0
+  h1
+    font-family: 'neosanspro-bold'
+    font-size: 60px
+    color: #ffffff
+    text-transform: uppercase
+    line-height: 1em
+    margin-bottom: 0
+  h2
+    color: white
+    font-family: 'robotoregular'
+    font-size: 24px
+    margin-top: 0
+    line-height: 1em
+  .price__new
+    display: inline-block
+    text-align: center
+    width: 180px
+    position: relative
+    z-index: 1
+    margin-top: 40px
+    span
+      font-size: 14px
+      color: white
+      font-family: 'robotomedium'
+
+    .price__new-out
+      border: 3px solid #ffb201
+      background: transparent
+      width: 180px
+      height: 100px
+    .price__new-in
+      background-color: #ff9c00
+      @include background-image(linear-gradient(to bottom, #ffc903 0%, #ff9b00 100%))
+      color: #37180f
+      font-family: 'robotoregular'
+      font-size: 36px
+      width: 160px
+      height: 80px
+      margin: 7px
+      padding-top: 15px
+      +border-radius(1px)
+
+  .price__old
+    display: inline-block
+    font-size: 29px
+    color: #ffffff
+    font-family: 'robotoregular'
+    width: 144px
+    height: 80px
+    padding-top: 15px
+    border: solid 3px #ffffff
+    text-align: center
+    margin-left: -22px
+    position: relative
+    top: 10px
+  .price__about
+    background: url(../img/price_bg.png) no-repeat center
+    width: 330px
+    height: 80px
+    padding: 7px 25px
+    color: white
+    display: inline-block
+    position: relative
+    top: 22px
+    margin-left: -4px
+
+  .top__img
+    display: inline-block
+    position: relative
+    margin-top: 20px
+    margin-left: -80px
+    z-index: 1
+    img
+      display: block
+  .top__form
+    padding: 30px 70px 30px 140px
+    border-radius: 20px
+    background: #ffffff
+    position: relative
+    margin: 210px 80px -100px -130px
+    +box-shadow(0 22px 20px -23px #616161)
+    .form-l
+      float: left
+      width: 52%
+      margin-top: -7px
+      h2
+        font-family: 'robotobold_condensed'
+        text-transform: uppercase
+        font-size: 36px
+        color: #3aa4ef
+        text-align: right
+        line-height: 1.2em
+      h3
+        display: inline-block
+        font-family: 'robotoregular'
+        font-size: 14px
+        color: #242833
+        text-transform: uppercase
+        text-align: right
+      .counter
+        display: inline-block
+        vertical-align: middle
+        margin-top: 10px
+        margin-left: 10px
+        .bl
+          float: left
+          text-align: center
+          margin: 0 3px
+          span
+            width: 42px
+            height: 54px
+            border: 1px solid rgba(29,30,31,.17)
+            +border-radius(4px)
+            +background-clip(padding-box)
+            +box-shadow(0 2px 2px rgba(29,30,31,.27))
+            +background-image(linear-gradient(to bottom, #fff 0%, #d1d3d3 50%, #c1bdbd 51%, #efefef 54%, #e1e1e1 100%))
+            display: inline-block
+            font-family: 'robotocondensed'
+            font-size: 24px
+            color: #242833
+            padding-top: 10px
+          p
+            font-family: 'robotocondensed'
+            font-size: 12px
+            color: #242833
+            margin-top: 3px
+    .form-r
+      float: right
+      width: 43%
+      text-align: center
+      form
+        input
+          width: 100%
+          height: 44px
+          border: 1px solid rgba(29,30,31,.19)
+          background-color: #fff
+          padding-left: 15px
+          margin-bottom: 14px
+        button
+          width: 100%
+          height: 44px
+          @include border-radius(22px)
+          @include background-clip(padding-box)
+          @include background-image(linear-gradient(to bottom, #ffc703 0%, #ff9d00 100%))
+          color: #ffffff
+          font-family: "robotobold_condensed"
+          font-size: 18px
+          text-transform: uppercase
+          border: none
+          +text-shadow(0 -1px 0 rgba(29,30,31,.42))
+          &:hover
+            background: lighten(#ffc703, 10%)
+
+
+
+
+
+
+
+
+.about-b
+  background: url(../img/about_bg.png) repeat
+  padding-bottom: 40px
+  padding-top: 60px
+  overflow: hidden
+  h2
+    margin-bottom: 20px
+  .about__features
+    list-style-type: none
+    font-family: 'robotolight'
+    font-size: 18px
+    color: #2d2d2d
+    position: relative
+    z-index: 2
+    span
+      font-family: 'robotoregular'
+    li
+      position: relative
+      margin-bottom: 20px
+      margin-left: 10px
+      &:before
+        position: absolute
+        content: ""
+        background: url(../img/bullet-ico.png) left no-repeat
+        width: 44px
+        height: 44px
+        left: -60px
+        top: 4px
+  .about__img
+    margin-left: -250px
+    margin-top: -155px
+    margin-bottom: -110px
+    position: relative
+    z-index: 1
+
+    img
+      display: block
+  .about__bottom
+    font-family: 'robotolight'
+    font-size: 18px
+    color: #2d2d2d
+    position: relative
+    z-index: 2
 
 
 
@@ -96,7 +306,6 @@ header
 
 
   .bg
-    background: url("../img/how-we-work/bg.jpg") no-repeat
     +background-size(cover)
     padding-top: 35px
     padding-bottom: 35px
@@ -113,7 +322,6 @@ header
           content: ''
           display: block
           position: absolute
-          background: url("../img/how-we-work/triangle.png") no-repeat
           width: 40px
           height: 14px
           bottom: -48px
