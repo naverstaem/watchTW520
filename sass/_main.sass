@@ -181,33 +181,7 @@ header
         color: #242833
         text-transform: uppercase
         text-align: right
-      .counter
-        display: inline-block
-        vertical-align: middle
-        margin-top: 10px
-        margin-left: 10px
-        .bl
-          float: left
-          text-align: center
-          margin: 0 3px
-          span
-            width: 42px
-            height: 54px
-            border: 1px solid rgba(29,30,31,.17)
-            +border-radius(4px)
-            +background-clip(padding-box)
-            +box-shadow(0 2px 2px rgba(29,30,31,.27))
-            +background-image(linear-gradient(to bottom, #fff 0%, #d1d3d3 50%, #c1bdbd 51%, #efefef 54%, #e1e1e1 100%))
-            display: inline-block
-            font-family: 'robotocondensed'
-            font-size: 24px
-            color: #242833
-            padding-top: 10px
-          p
-            font-family: 'robotocondensed'
-            font-size: 12px
-            color: #242833
-            margin-top: 3px
+
     .form-r
       float: right
       width: 43%
@@ -663,7 +637,93 @@ header
     margin-top: -90px
     margin-left: -200px
     position: relative
-    
+  .counter-wrapper
+    text-align: center
+    display: block
+    margin: 0 auto
+    h3
+      color: #ffffff
+      font-family: 'robotoregular'
+      font-size: 18px
+      margin-bottom: 0
+    p
+      color: #ffffff
+  .price-wrapper
+    text-align: center
+    display: block
+    margin: 0 auto
+    .price__new
+      display: inline-block
+      text-align: center
+      width: 180px
+      position: relative
+      z-index: 1
+      margin-top: 40px
+      span
+        font-size: 14px
+        color: white
+        font-family: 'robotomedium'
+        text-transform: uppercase
+      .price__new-out
+        border: 3px solid #ffb201
+        background: transparent
+        width: 180px
+        height: 100px
+      .price__new-in
+        background-color: #ff9c00
+        @include background-image(linear-gradient(to bottom, #ffc903 0%, #ff9b00 100%))
+        color: #37180f
+        font-family: 'robotoregular'
+        font-size: 36px
+        width: 160px
+        height: 80px
+        margin: 7px
+        padding-top: 15px
+        +border-radius(1px)
+
+    .price__old
+      display: inline-block
+      font-size: 29px
+      color: #ffffff
+      font-family: 'robotoregular'
+      width: 144px
+      height: 54px
+      border-bottom: solid 3px #ffffff
+      border-left: solid 3px #ffffff
+      border-right: solid 3px #ffffff
+
+      text-align: center
+      position: relative
+      top: 6px
+
+  .form-wrapper
+    .form
+      text-align: center
+      form
+        input
+          width: 100%
+          height: 44px
+          border: 1px solid rgba(29,30,31,.19)
+          background-color: #fff
+          padding-left: 15px
+          margin-bottom: 14px
+        button
+          width: 100%
+          height: 44px
+          @include border-radius(22px)
+          @include background-clip(padding-box)
+          @include background-image(linear-gradient(to bottom, #ffc703 0%, #ff9d00 100%))
+          color: #ffffff
+          font-family: "robotobold_condensed"
+          font-size: 18px
+          text-transform: uppercase
+          border: none
+          +text-shadow(0 -1px 0 rgba(29,30,31,.42))
+          &:hover
+            background: lighten(#ffc703, 10%)
+
+
+
 
 
 
