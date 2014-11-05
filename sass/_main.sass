@@ -28,10 +28,7 @@
         &:hover, &.active, &:focus
           text-decoration: underline
           color: #ffffff
-      //&.active, &:hover
-      //  a
-      //    text-decoration: underline
-      //    color: #ffffff !important
+
 
   .navbar-right
     margin-top: 5px
@@ -289,6 +286,177 @@ header
     position: relative
     z-index: 2
 
+.why-b
+  background: url(../img/why_bg.jpg) center center no-repeat
+  +background-size(cover)
+  text-align: left
+  padding-top: 20px
+  padding-bottom: 50px
+  .container
+    max-width: 1000px
+  h2
+    color: #ffffff
+    margin-bottom: 60px
+  .item
+    position: relative
+    &:before
+      position: absolute
+      content: ""
+      left: -40px
+      top: 23px
+    &:after
+      position: absolute
+      content: ""
+      height: 0
+      width: 60px
+      border-bottom: solid 3px #ffffff
+
+
+  .item1
+    margin-left: 130px
+    &:before
+      background: url(../img/why-ico1.png) no-repeat
+      width: 35px
+      height: 44px
+    &:after
+      bottom: -30px
+      left: 180px
+      +transform(rotate(60deg))
+  .item2
+    margin-right: 30px
+    float: right
+    &:before
+      background: url(../img/why-ico2.png) no-repeat
+      width: -30px
+      height: 46px
+    &:after
+      bottom: -30px
+      left: -40px
+      +transform(rotate(-60deg))
+  .item3
+    margin-top: 190px
+    &:before
+      background: url(../img/why-ico3.png) no-repeat
+      width: 30px
+      height: 55px
+    &:after
+      top: 43px
+      right: 0
+  .item4
+    margin-top: 80px
+  .item5
+    float: right
+    margin-top: 190px
+    margin-right: -70px
+    &:before
+      background: url(../img/why-ico4.png) no-repeat
+      width: 44px
+      height: 44px
+    &:after
+      top: 43px
+      left: -100px
+      width: 50px
+  .item6
+    margin-top: 80px
+    margin-left: 130px
+    &:before
+      background: url(../img/why-ico5.png) no-repeat
+      width: 49px
+      height: 35px
+      left: -50px
+    &:after
+      top: -30px
+      right: 20px
+      +transform(rotate(-60deg))
+  .item7
+    margin-top: 80px
+    margin-left: 130px
+    &:before
+      background: url(../img/why-ico6.png) no-repeat
+      width: 38px
+      height: 49px
+    &:after
+      top: -30px
+      left: 20px
+      +transform(rotate(60deg))
+  .why__item
+    h3
+      font-family: 'robotobold_condensed'
+      font-size: 18px
+      color: #3aa4ef
+      text-transform: uppercase
+      margin-bottom: 5px
+    p
+      color: #ffffff
+      font-family: 'robotoregular'
+      font-size: 16px
+
+.specs-b
+  padding-top: 20px
+  padding-bottom: 50px
+  h2
+    margin-bottom: 50px
+  .slider
+    margin-left: -55px
+  .thumbnails
+    margin-left: -25px
+    margin-top: 15px
+    img
+      display: inline-block
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+  .specs__components
+    border: dashed 3px #e8e8e8
+    padding: 20px 25px
+    margin-left: -25px
+    +border-radius(10px)
+    h2
+      color: #3aa4ef
+      font-size: 24px
+      text-transform: uppercase
+      font-family: 'robotobold_condensed'
+      margin-bottom: 25px
+      margin-top: 0
+      text-align: center
+    ul
+      list-style: none
+      padding-left: 0
+      font-family: 'robotoregular'
+      font-size: 16px
+      color: #949494
+      li
+        margin-left: 20px
+        position: relative
+        &:before
+          position: absolute
+          content: ""
+          top: 6px
+          left: -20px
+          background: url(../img/list-ico.png) no-repeat
+          width: 15px
+          height: 9px
+        &.last
+          &:before
+            background: none
+          margin-top: 15px
+        &.finish
+          margin-top: 0
+    .specs__items
+      margin-top: 10px
+      .item
+        float: left
+        width: 48%
+        +border-radius(10px)
+        position: relative
+        border: dashed 2px #e8e8e8
+        text-align: center
+        img
+          display: inline-block
+          height: 106px
+          margin: 6px 0
+        &.right
+          float: right
 
 
 .how-we-work

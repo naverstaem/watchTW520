@@ -70,6 +70,53 @@ header .container { max-width: 990px; }
 .about-b .about__img img { display: block; }
 .about-b .about__bottom { font-family: "robotolight"; font-size: 18px; color: #2d2d2d; position: relative; z-index: 2; }
 
+.why-b { background: url(../img/why_bg.jpg) center center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; text-align: left; padding-top: 20px; padding-bottom: 50px; }
+.why-b .container { max-width: 1000px; }
+.why-b h2 { color: #ffffff; margin-bottom: 60px; }
+.why-b .item { position: relative; }
+.why-b .item:before { position: absolute; content: ""; left: -40px; top: 23px; }
+.why-b .item:after { position: absolute; content: ""; height: 0; width: 60px; border-bottom: solid 3px #ffffff; }
+.why-b .item1 { margin-left: 130px; }
+.why-b .item1:before { background: url(../img/why-ico1.png) no-repeat; width: 35px; height: 44px; }
+.why-b .item1:after { bottom: -30px; left: 180px; -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -webkit-transform: rotate(60deg); transform: rotate(60deg); }
+.why-b .item2 { margin-right: 30px; float: right; }
+.why-b .item2:before { background: url(../img/why-ico2.png) no-repeat; width: -30px; height: 46px; }
+.why-b .item2:after { bottom: -30px; left: -40px; -moz-transform: rotate(-60deg); -ms-transform: rotate(-60deg); -webkit-transform: rotate(-60deg); transform: rotate(-60deg); }
+.why-b .item3 { margin-top: 190px; }
+.why-b .item3:before { background: url(../img/why-ico3.png) no-repeat; width: 30px; height: 55px; }
+.why-b .item3:after { top: 43px; right: 0; }
+.why-b .item4 { margin-top: 80px; }
+.why-b .item5 { float: right; margin-top: 190px; margin-right: -70px; }
+.why-b .item5:before { background: url(../img/why-ico4.png) no-repeat; width: 44px; height: 44px; }
+.why-b .item5:after { top: 43px; left: -100px; width: 50px; }
+.why-b .item6 { margin-top: 80px; margin-left: 130px; }
+.why-b .item6:before { background: url(../img/why-ico5.png) no-repeat; width: 49px; height: 35px; left: -50px; }
+.why-b .item6:after { top: -30px; right: 20px; -moz-transform: rotate(-60deg); -ms-transform: rotate(-60deg); -webkit-transform: rotate(-60deg); transform: rotate(-60deg); }
+.why-b .item7 { margin-top: 80px; margin-left: 130px; }
+.why-b .item7:before { background: url(../img/why-ico6.png) no-repeat; width: 38px; height: 49px; }
+.why-b .item7:after { top: -30px; left: 20px; -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -webkit-transform: rotate(60deg); transform: rotate(60deg); }
+.why-b .why__item h3 { font-family: "robotobold_condensed"; font-size: 18px; color: #3aa4ef; text-transform: uppercase; margin-bottom: 5px; }
+.why-b .why__item p { color: #ffffff; font-family: "robotoregular"; font-size: 16px; }
+
+.specs-b { padding-top: 20px; padding-bottom: 50px; }
+.specs-b h2 { margin-bottom: 50px; }
+.specs-b .slider { margin-left: -55px; }
+.specs-b .thumbnails { margin-left: -25px; margin-top: 15px; }
+.specs-b .thumbnails img { display: inline-block; margin-right: 15px; }
+.specs-b .thumbnails img:last-child { margin-right: 0; }
+.specs-b .specs__components { border: dashed 3px #e8e8e8; padding: 20px 25px; margin-left: -25px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.specs-b .specs__components h2 { color: #3aa4ef; font-size: 24px; text-transform: uppercase; font-family: "robotobold_condensed"; margin-bottom: 25px; margin-top: 0; text-align: center; }
+.specs-b .specs__components ul { list-style: none; padding-left: 0; font-family: "robotoregular"; font-size: 16px; color: #949494; }
+.specs-b .specs__components ul li { margin-left: 20px; position: relative; }
+.specs-b .specs__components ul li:before { position: absolute; content: ""; top: 6px; left: -20px; background: url(../img/list-ico.png) no-repeat; width: 15px; height: 9px; }
+.specs-b .specs__components ul li.last { margin-top: 15px; }
+.specs-b .specs__components ul li.last:before { background: none; }
+.specs-b .specs__components ul li.finish { margin-top: 0; }
+.specs-b .specs__components .specs__items { margin-top: 10px; }
+.specs-b .specs__components .specs__items .item { float: left; width: 48%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; position: relative; border: dashed 2px #e8e8e8; text-align: center; }
+.specs-b .specs__components .specs__items .item img { display: inline-block; height: 106px; margin: 6px 0; }
+.specs-b .specs__components .specs__items .item.right { float: right; }
+
 .how-we-work { text-align: center; padding-bottom: 150px; margin-top: 70px; }
 .how-we-work h2 { color: #272727; font-family: "aleksandracregular"; font-size: 42px; font-weight: normal; text-transform: uppercase; margin-bottom: 40px; }
 .how-we-work .bg { -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 35px; padding-bottom: 35px; }
