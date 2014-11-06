@@ -738,41 +738,25 @@ header
             background: lighten(#ffc703, 10%)
 
 
-
-
-
-
-
 .other
-  padding-top: 100px
+  padding-top: 20px
   text-align: center
 
   h2
-    color: #333 // text color
-    font-family: $alex
-    font-size: 42px
-    font-weight: normal
-    text-transform: uppercase
-    margin-bottom: 40px
+    margin-bottom: 30px
 
   .other-items
     .item
-      padding: 35px 25px
-      border: 5px #bf1c2b solid
-      +border-radius(4px)
-      font-family: $alex
+      padding: 15px 22px
+      border: 3px rgb(219,219,219) solid
+      +border-radius(21px)
+      margin: 0 11px
 
       h3
-        font-size: 21px
-        font-weight: normal
-        color: #181818
-        margin-bottom: 0
-
-      h4
-        color: #666666
-        font-size: 18px
-        font-weight: normal
-        margin-top: 0
+        font-size: 20px
+        font-family: 'robotoitalic'
+        color: #3d3e46
+        margin: 0 0 5px
 
       p
         font-size: 29px
@@ -780,40 +764,64 @@ header
         text-transform: uppercase
 
     .img
-      height: 177px
+      height: 191px
+      text-align: center
+    .price-b
+      margin: 10px 0
+    .price-old
+      color: #acacac
+      font-size: 22px
+      font-family: 'robotoregular'
+      padding: 10px
+      background: #ffffff
+      width: 49%
+      display: inline-block
+    .price-new
+      @extend .price-old
+      background: #242833
+      color: #ffffff
 
-      img
-        display: inline-block
-        vertical-align: middle
 
 
 
   input
     width: 100%
-    height: 35px
+    height: 44px
     @include border-radius(2px) // border radius
-    background-color: #fff // layer fill content + color overlay
-    border: 1px solid rgba(204,204,204,.59)
-    margin-bottom: 12px
-    padding-left: 10px
-    color: #999 // text color
-    font-family: $alex
+    border: 1px solid #dbdbdb
+    margin-bottom: 14px
+    padding-left: 15px
     font-size: 15px
 
     &:focus
       @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
 
-  button
-    width: 100%
-    height: 53px
-    @include border-radius(4px) // border radius
-    background-color: #7ea641 // layer fill content + color overlay
-    @include box-shadow(0 3px 0 #658f23) // drop shadow
-    border: none
-    color: #fff // text color
-    font-family: $alex
-    font-size: 25px
-    margin-top: 10px
+  .btn-b
+    .btn-about
+      border: 2px solid #dbdbdb
+      @include border-radius(20px)
+      @include background-clip(padding-box)
+      font-family: 'robotomedium'
+      font-size: 14px
+      color: #888888
+      text-transform: uppercase
+      padding: 8px 0
+      margin-right: 5px
+      width: 47%
+      &:hover
+        text-decoration: underline
+    .btn-order
+      margin-right: 0
+      padding: 10px 0
+      @extend .btn-about
+      color: white
+      @include background-image(linear-gradient(to bottom, #5cbbff 0%, #148ade 100%))
+      border: none
+      +single-text-shadow()
+      &:hover
+        text-decoration: none
+        background: lighten(#5cbbff, 5%)
+
 
 
 footer
