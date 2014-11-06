@@ -1,7 +1,12 @@
 
 head.ready(function() {
 
-
+	$('#thumbnails li').click(function(){
+		var srcLink = $(this).attr('data-src');
+		$('.active').removeClass('active');
+		$(this).addClass('active');
+		$('.slider img').attr('src', srcLink);
+	});
 
 	// Counter
 

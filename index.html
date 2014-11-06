@@ -28,10 +28,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">О товаре</a></li>
+                    <li><a href="#about">О товаре</a></li>
                     <li><a href="#">Гарантии</a></li>
-                    <li><a href="#">Оплата и доставка</a></li>
-                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#delivery">Оплата и доставка</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
                 </ul>
 
                 <div class="navbar-right">
@@ -245,13 +245,13 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="slider"><img src="img/slider-big.jpg" alt="slider"/></div>
-                <div class="thumbnails">
-                    <img src="img/slider-img1.jpg" alt="slider-thumbnails"/>
-                    <img src="img/slider-img2.jpg" alt="slider-thumbnails"/>
-                    <img src="img/slider-img3.jpg" alt="slider-thumbnails"/>
-                    <img src="img/slider-img4.jpg" alt="slider-thumbnails"/>
+                    <ul class="thumbnails" id="thumbnails">
+                        <li data-src="img/slider-big.jpg" class="active"><img src="img/slider-img1.jpg" alt="slider-thumbnails"/></li>
+                        <li data-src="http://lorempixel.com/293/460"><img src="img/slider-img2.jpg" alt="slider-thumbnails"/></li>
+                        <li data-src="img/slider-big.jpg"> <img src="img/slider-img3.jpg" alt="slider-thumbnails"/></li>
+                        <li data-src="http://lorempixel.com/293/460"> <img src="img/slider-img4.jpg" alt="slider-thumbnails"/></li>
 
-                </div>
+                    </ul>
                 <div class="specs__components">
                     <h2>комплектация</h2>
                     <ul>
@@ -391,7 +391,7 @@
                 <ul class="right-b">
                     <li>есть</li>
                     <li>1000 номеров</li>
-                    <br />
+                    <br>
                     <li>будильник, калькулятор, планировщик задач</li>
                 </ul>
 
@@ -400,7 +400,7 @@
     </div>
 </section>
 
-<section class="how-we-work">
+<section class="how-we-work" id="delivery">
     <h2 class="title">как мы работаем</h2>
 
     <div class="bg">

@@ -101,16 +101,17 @@ header .container { max-width: 990px; }
 
 .specs-b { padding-top: 20px; padding-bottom: 50px; }
 .specs-b h2 { margin-bottom: 50px; }
-.specs-b .slider { margin-left: -55px; }
-.specs-b .thumbnails { margin-left: -25px; margin-top: 15px; }
-.specs-b .thumbnails img { display: inline-block; margin-right: 15px; }
-.specs-b .thumbnails img:last-child { margin-right: 0; }
-.specs-b .specs__components { border: dashed 3px #e8e8e8; padding: 20px 25px; margin-top: 55px; margin-left: -25px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.specs-b .thumbnails { margin-left: 0; margin-top: 40px; list-style: none; padding-left: 0px; }
+.specs-b .thumbnails li { display: inline-block; margin-right: 7px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
+.specs-b .thumbnails li:hover { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+.specs-b .thumbnails li:last-child { margin-right: 0; }
+.specs-b .thumbnails li.active { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+.specs-b .specs__components { border: dashed 3px #e8e8e8; padding: 20px 25px; margin-top: 45px; margin-left: -15px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 .specs-b .specs__components h2 { color: #3aa4ef; font-size: 24px; text-transform: uppercase; font-family: "robotobold_condensed"; margin-bottom: 25px; margin-top: 0; text-align: center; }
-.specs-b .specs__components ul { list-style: none; padding-left: 0; font-family: "robotoregular"; font-size: 16px; color: #949494; }
+.specs-b .specs__components ul { margin-bottom: 30px; list-style: none; padding-left: 0; font-family: "robotoregular"; font-size: 16px; color: #949494; }
 .specs-b .specs__components ul li { margin-left: 20px; position: relative; }
 .specs-b .specs__components ul li:before { position: absolute; content: ""; top: 6px; left: -20px; background: url(../img/list-ico.png) no-repeat; width: 15px; height: 9px; }
-.specs-b .specs__components ul li.last { margin-top: 15px; }
+.specs-b .specs__components ul li.last { margin-top: 20px; }
 .specs-b .specs__components ul li.last:before { background: none; }
 .specs-b .specs__components ul li.finish { margin-top: 0; }
 .specs-b .specs__components .specs__items { margin-top: 10px; }
